@@ -9,7 +9,7 @@ class HigherOrder extends React.Component{
     console.log(this.props)
     return (
       <div>
-        <div>{this.props.name}</div>
+        <div>{ this.props.name }</div>
         <div>{this.props.value}</div>
       </div>
     )
