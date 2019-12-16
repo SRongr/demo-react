@@ -8,6 +8,9 @@ import Event from './components/Event'
 import './App.css';
 import Form from './components/Form';
 import CSS from './components/CSS'
+import List from './components/Communication/list'
+import Mixins from './components/mixins';
+import HigherOrder from './components/higherOrder';
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +21,9 @@ function App() {
           <Route path="/event" component={Event}></Route>
           <Route path="/form" component={Form}></Route>
           <Route path="/css" component={CSS}></Route>
+          <Route path="/communication" component={List}></Route>
+          <Route path="/mixins" component={Mixins}></Route>
+          <Route path="/higher" component={HigherOrder}></Route>
         </Route>
       </Switch>
     </BrowserRouter>
