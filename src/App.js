@@ -11,6 +11,7 @@ import CSS from './components/CSS'
 import List from './components/Communication/list'
 import Mixins from './components/mixins';
 import HigherOrder from './components/higherOrder';
+import PureReact from './components/PureReact';
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +25,7 @@ function App() {
           <Route path="/communication" component={List}></Route>
           <Route path="/mixins" component={Mixins}></Route>
           <Route path="/higher" component={HigherOrder}></Route>
+          <Route path="/pure" component={PureReact}></Route>
         </Route>
       </Switch>
     </BrowserRouter>

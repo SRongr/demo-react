@@ -15,3 +15,36 @@ export const myContainer = (Target, propertyKey, descriptor) => {
   }
   return WrapComp
 }
+
+export const myContainerReverse = (Target, propertyKey, descriptor) => {
+  class WrapComp extends Target {
+    render () {
+      console.log(this.displayName)
+      return (
+        <div>
+          <h4>HOC</h4>
+          <div>{super.render()}</div>
+        </div>
+      )
+    }
+  }
+  return WrapComp
+}
+
+export const myContainerReverseByParams = (params) => {
+  return (Target, propertyKey, descriptor) => {
+    // do something by params
+    params += 'do'
+    class WrapComp extends React.Component {
+      render () {
+        const props = {
+          name: params
+        }
+        return (
+          <Target {...props}></Target>
+        )
+      }
+    }
+    return WrapComp
+  }
+}
