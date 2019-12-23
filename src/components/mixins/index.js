@@ -1,5 +1,5 @@
 import React from 'react'
-import { mixin } from 'core-decorators'
+// import { mixin } from 'core-decorators'
 // import Mixin from './mixin'
 
 // @mixin(Mixin)
