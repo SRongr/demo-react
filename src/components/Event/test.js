@@ -1,10 +1,11 @@
 import React from 'react'
-
+// import Perf from 'react-addons-perf'
 export default class testEvent extends React.Component {
   constructor () {
     super()
   }
   componentDidMount () {
+    // window.Perf=Perf
     document.addEventListener('click', () => {
       console.log('document.click')
     })
